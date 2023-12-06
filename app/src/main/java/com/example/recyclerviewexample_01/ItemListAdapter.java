@@ -28,19 +28,18 @@ public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ViewHo
     }
 
     @Override
-    public ItemListAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public int getItemCount() {
+        return data.size();
+    }
+    @Override
+    public ItemListAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int type) {
         View view= inflater.inflate(R.layout.item,null);
         return new ItemListAdapter.ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(ItemListAdapter.ViewHolder holder,final int position) {
+    public void onBindViewHolder(final ItemListAdapter.ViewHolder holder,final int position) {
         holder.bindData(data.get(position));
-    }
-
-    @Override
-    public int getItemCount() {
-        return data.size();
     }
 
     public void setItems(List<ItemList>items){

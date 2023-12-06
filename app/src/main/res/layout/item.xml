@@ -32,7 +32,7 @@
 
             <com.google.android.material.circularreveal.CircularRevealLinearLayout
                 android:id="@+id/llHotel"
-                android:layout_width="wrap_content"
+                android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="5dp"
@@ -44,7 +44,7 @@
 
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/tvName"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="3dp"
                     android:text="Title"
@@ -54,7 +54,7 @@
 
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/tvCity"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Manizales"
                     android:textSize="18sp" />
@@ -64,17 +64,16 @@
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvAvai"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
-                android:layout_toRightOf="@id/llHotel"
                 android:layout_marginTop="8dp"
                 android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/llHotel"
                 android:text="Disponible"
                 android:textAlignment="textEnd"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold" />
 
 
         </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
